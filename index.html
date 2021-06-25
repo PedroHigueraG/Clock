@@ -7,13 +7,23 @@
     <link rel="stylesheet" href="style.css">
     <title>Clock</title>
 </head>
-<body onload="startTime()">
+<body onload="startTime(),init()">
     <div class="clock_container">
         <div class="div_time">
             <span id="time"></span>
             <span id="date"></span>
         </div>
+        <div class="div_time">
+            <span id="stopwatch"></span>
+            <div class="button_container">
+                <div class="button start">Start</div>
+                <div class="button stop">Stop</div>
+                <div class="button restart">Restart</div>
+            </div>
+        </div>
+
     </div>
     <script src="js/clock.js"></script>
+    <script src="js/stopwatch.js"></script>
 </body>
 </html>
