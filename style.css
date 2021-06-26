@@ -17,6 +17,11 @@ span{
     text-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.5);
     font-size: 14rem; 
 }
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* Clock */
 .clock_container{
     min-height: 100vh;
@@ -33,7 +38,8 @@ span{
     background-color: #083f9e75;
     backdrop-filter: blur(1rem);
     border-radius: 1rem;
-    padding: 4rem;
+    height: 30rem;
+    width: 60rem;
     margin: 1rem;
     box-shadow: 0rem 0rem 1rem 0.25rem rgba(0, 0, 0, 0.5);
 }
@@ -57,4 +63,34 @@ span{
     cursor: pointer;
     background-color:rgb(223, 223, 223);
     transition: .3s;
+}
+/* Timer */
+.timer_container{
+    height: 62rem;
+    width: 60rem;
+    background-color: #083f9e75;
+    backdrop-filter: blur(1rem);
+    box-shadow: 0rem 0rem 1rem 0.25rem rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+.timer_svg{
+    width: 400px;
+    height: 400px;
+}
+.timer_g{
+    fill: none;
+    stroke: none;
+}
+.timer_circle{
+    stroke-width: 0.05rem;
+    stroke-dasharray: 0.1rem;
+    stroke: rgb(223, 223, 223);
+}
+#timer_span{
+    font-size: 7rem;
 }

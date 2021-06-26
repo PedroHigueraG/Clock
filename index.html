@@ -8,21 +8,32 @@
     <title>Clock</title>
 </head>
 <body onload="startTime(),init()">
-    <div class="clock_container">
-        <div class="div_time">
-            <span id="time"></span>
-            <span id="date"></span>
-        </div>
-        <div class="div_time">
-            <span id="stopwatch"></span>
-            <div class="button_container">
-                <div class="button start">Start</div>
-                <div class="button stop">Stop</div>
-                <div class="button restart">Restart</div>
+    <div class="container">
+        <div class="clock_container">
+            <div class="div_time">
+                <span id="time"></span>
+                <span id="date"></span>
+            </div>
+            <div class="div_time">
+                <span id="stopwatch"></span>
+                <div class="button_container">
+                    <div class="button start">Start</div>
+                    <div class="button stop">Stop</div>
+                    <div class="button restart">Restart</div>
+                </div>
             </div>
         </div>
-
+        <div class="timer_container">
+            <svg class="timer_svg" viewBox="0 0 100 100">
+                <g class="timer_g">
+                    <circle class="timer_circle" cx="50" cy="50" r="45"/>
+                </g>
+                
+            </svg>
+            <span id="timer_span">00:00:00</span>
+        </div>
     </div>
+    
     <script src="js/clock.js"></script>
     <script src="js/stopwatch.js"></script>
 </body>
