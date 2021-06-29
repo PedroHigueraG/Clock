@@ -7,5 +7,5 @@ This contain:
 
 ##Design
 <p>
-  <img src="assets/capture.jpeg" width="250"/>
+  <img src="assets/capture.jpeg" width="400"/>
 </p>
