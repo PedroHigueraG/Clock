@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Clock</title>
 </head>
-<body onload="startTime(),init()">
+<body onload="startTime(),init(),timerOn()">
     <div class="container">
         <div class="clock_container">
             <div class="div_time">
@@ -30,11 +30,22 @@
                 </g>
                 
             </svg>
-            <span id="timer_span">00:00:00</span>
+            <span id="timer_span"></span>
+            <form class="timer_form" action="">
+                <input type="number" title="hours" id="hours"  value="0" min="0" onchange="cargar()">
+                <input type="number" title="minutes" id="minutes" value="0" min="0" max="59" onchange="cargar()">
+                <input type="number" title="seconds" id="seconds" value="0" min="0" max="59" onchange="cargar()">
+            </form>
+            <div class="button_container">
+                <div class="button start_timer">Start</div>
+                <div class="button stop_timer">Stop</div>
+                <div class="button restart_timer">Restart</div>
+            </div>
         </div>
     </div>
     
     <script src="js/clock.js"></script>
     <script src="js/stopwatch.js"></script>
+    <script src="js/timer.js"></script>
 </body>
 </html>
